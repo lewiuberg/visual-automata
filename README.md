@@ -23,7 +23,7 @@ _Released under the MIT license_
 Visual Automata is a Python 3 library built as a wrapper for **Caleb Evans'** [Automata](https://github.com/caleb531/automata) library to add more visualization features.
 
 ## Prerequisites
----
+
 [Automata](https://github.com/caleb531/automata)\
 `pip install automata-lib`\
 `pip install pandas`\
@@ -32,11 +32,11 @@ Visual Automata is a Python 3 library built as a wrapper for **Caleb Evans'** [A
 `pip install jupyterlab`
 
 ## Installing
----
+
 `pip install visual-automata`
 
 ## Contents
----
+
 
 - [Visual Automata](#visual-automata)
   - [Prerequisites](#prerequisites)
@@ -255,17 +255,14 @@ Step: Current state: Input symbol: New state:
 ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/dfa_10011.png?raw=true "dfa_10011")
 
 ## Authors
----
 
 * **Lewi Lie Uberg** - [uberg.me](https://uberg.me/)
 
 ## License
----
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/lewiuberg/visual-automata/blob/master/LICENSE.txt) file for details
 
 ## Acknowledgments
----
 
 * [Caleb Evans](https://github.com/caleb531) for his work on automata-lib.
 * [Geir Arne Hjelle](https://github.com/gahjelle) and [Michal Porteš](https://github.com/mportesdev) for their general counsel.
