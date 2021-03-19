@@ -265,5 +265,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 ## Acknowledgments
 
 * [Caleb Evans](https://github.com/caleb531) for his work on automata-lib.
-* [Geir Arne Hjelle](https://github.com/gahjelle) and [Michal Porteš](https://github.com/mportesdev) for their general counsel.
+* [Geir Arne Hjelle](https://github.com/gahjelle), [Michal Porteš](https://github.com/mportesdev), and [Bart Willems](https://github.com/bart-r-willems) for their general counsel.
 * [JFLAP](http://www.jflap.org) for their work on a GUI based Automata application.
