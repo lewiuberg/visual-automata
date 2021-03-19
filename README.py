@@ -32,14 +32,21 @@
 # ## Contents
 # ---
 #
-# - [VisualDFA](#VisualDFA)
-#     - [Importing](#Importing)
-#     - [Instantiating DFAs](#Instantiating-DFAs)
-#     - [Converting](#Converting)
-#     - [Minimal DFA](#Minimal-DFA)
-#     - [Transition Table](#Transition-Table)
-#     - [Check input strings](#Check-input-strings)
-#     - [Show Diagram](#Show-Diagram)
+# - [Visual Automata](#visual-automata)
+#   - [## Prerequisites](#-prerequisites)
+#   - [## Installing](#-installing)
+#   - [## Contents](#-contents)
+#     - [VisualDFA](#visualdfa)
+#       - [Importing](#importing)
+#       - [Instantiating DFAs](#instantiating-dfas)
+#       - [Converting](#converting)
+#       - [Minimal-DFA](#minimal-dfa)
+#       - [Transition Table](#transition-table)
+#       - [Check input strings](#check-input-strings)
+#       - [Show Diagram](#show-diagram)
+#   - [## Authors](#-authors)
+#   - [## License](#-license)
+#   - [## Acknowledgments](#-acknowledgments)
 #
 # ### VisualDFA
 # #### Importing
@@ -108,32 +115,79 @@ new_dfa = VisualDFA(
 
 new_dfa.table
 
+# ```text
+#       0    1
+# →q0  q0  *q1
+# *q1  q0   q2
+# q2   q2  *q1
+# ```
+
 new_dfa.show_diagram()
+
+# ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/new_dfa.png?raw=true "new_dfa")
 
 minimal_dfa = VisualDFA.minify(new_dfa)
 minimal_dfa.show_diagram()
 
+# ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/minimal_dfa.png?raw=true "minimal_dfa")
+
 minimal_dfa.table
 
+# ```text
+#                 0        1
+# →{q0,q2}  {q0,q2}      *q1
+# *q1       {q0,q2}  {q0,q2}
+# ```
+#
 # #### Transition Table
 # Outputs the transition table for the given DFA.
 
 dfa.table
 
+# ```text
+#        0    1
+# →q0   q3   q1
+# q1    q3  *q2
+# *q2   q3  *q2
+# q3   *q4   q1
+# *q4  *q4   q1
+# ```
+#
 # #### Check input strings
 # `1001` does not end with `00` or `11`, and is therefore `Rejected`
 
 dfa.input_check("1001")
 
+# ```text
+#           [Rejected]                         
+# Step: Current state: Input symbol: New state:
+# 1                →q0             1         q1
+# 2                 q1             0         q3
+# 3                 q3             0        *q4
+# 4                *q4             1         q1
+# ```
+#
 # `10011` does end with `11`, and is therefore `Accepted`
 
 dfa.input_check("10011")
 
+# ```text
+#           [Accepted]                         
+# Step: Current state: Input symbol: New state:
+# 1                →q0             1         q1
+# 2                 q1             0         q3
+# 3                 q3             0        *q4
+# 4                *q4             1         q1
+# 5                 q1             1        *q2
+# ```
+#
 # #### Show Diagram
 # For IPython `dfa.show_diagram()` may be used.\
 # For a python script `dfa.show_diagram(view=True)` may be used to automatically view the graph as a PDF file.
 
 dfa.show_diagram()
+
+# ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/dfa.png?raw=true "dfa")
 
 # The `show_diagram` method also accepts input strings, and will return a graph with gradient `red` arrows for `Rejected` results, and gradient `green` arrows for `Accepted` results. It will also display a table with transitions states stepwise. The steps in this table will correspond with the `[number]` over eached traversed arrow.
 #
@@ -141,8 +195,12 @@ dfa.show_diagram()
 
 dfa.show_diagram("1001")
 
+# ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/dfa_1001.png?raw=true "dfa_1001")
+
 dfa.show_diagram("10011")
 
+# ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/dfa_10011.png?raw=true "dfa_10011")
+#
 # ## Authors
 # ---
 #
