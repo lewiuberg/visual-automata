@@ -262,7 +262,7 @@ Step: Current state: Input symbol: New state:
 ## License
 ---
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/lewiuberg/visual-automata/blob/master/LICENSE.txt) file for details
 
 ## Acknowledgments
 ---
