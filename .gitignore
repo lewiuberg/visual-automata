@@ -3,6 +3,10 @@
 
 #### DEV ###
 ref/
+build/
+dist/
+visual_automata.egg-info/
+lewi_requirements.txt
 
 ### macOS ###
 # General

@@ -25,7 +25,8 @@ setup(
         "Programming Language :: Python :: 3.6",
     ],
     packages=[
-        "visual-automata"
+        "visual_automata",
+        "visual_automata.fa"
     ],
     include_package_data=True,
     install_requires=[
