@@ -1,3 +1,4 @@
+<!---
 ---
 jupyter:
   jupytext:
@@ -13,6 +14,7 @@ jupyter:
     language: python
     name: python3
 ---
+--->
 
 # Visual Automata
 Copyright 2021 Lewi Lie Uberg\
