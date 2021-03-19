@@ -256,7 +256,7 @@ Step: Current state: Input symbol: New state:
 
 ## Authors
 
-* **Lewi Lie Uberg** - [uberg.me](https://uberg.me/)
+* **[Lewi Lie Uberg](https://github.com/lewiuberg)** - [uberg.me](https://uberg.me/)
 
 ## License
 
