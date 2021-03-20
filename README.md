@@ -27,6 +27,23 @@ _Released under the MIT license_
 
 Visual Automata is a Python 3 library built as a wrapper for **Caleb Evans'** [Automata](https://github.com/caleb531/automata) library to add more visualization features.
 
+## Contents
+
+- [Visual Automata](#visual-automata)
+  - [Prerequisites](#prerequisites)
+  - [Installing](#installing)
+  - [VisualDFA](#visualdfa)
+    - [Importing](#importing)
+    - [Instantiating DFAs](#instantiating-dfas)
+    - [Converting](#converting)
+    - [Minimal-DFA](#minimal-dfa)
+    - [Transition Table](#transition-table)
+    - [Check input strings](#check-input-strings)
+    - [Show Diagram](#show-diagram)
+  - [Authors](#authors)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+
 ## Prerequisites
 
 [Automata](https://github.com/caleb531/automata)\
@@ -39,25 +56,6 @@ Visual Automata is a Python 3 library built as a wrapper for **Caleb Evans'** [A
 ## Installing
 
 `pip install visual-automata`
-
-## Contents
-
-
-- [Visual Automata](#visual-automata)
-  - [Prerequisites](#prerequisites)
-  - [Installing](#installing)
-  - [Contents](#contents)
-    - [VisualDFA](#visualdfa)
-      - [Importing](#importing)
-      - [Instantiating DFAs](#instantiating-dfas)
-      - [Converting](#converting)
-      - [Minimal-DFA](#minimal-dfa)
-      - [Transition Table](#transition-table)
-      - [Check input strings](#check-input-strings)
-      - [Show Diagram](#show-diagram)
-  - [Authors](#authors)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
 
 ### VisualDFA
 
