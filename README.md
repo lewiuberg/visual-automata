@@ -32,14 +32,14 @@ Visual Automata is a Python 3 library built as a wrapper for **Caleb Evans'** [A
 - [Visual Automata](#visual-automata)
   - [Prerequisites](#prerequisites)
   - [Installing](#installing)
-  - [VisualDFA](#visualdfa)
-    - [Importing](#importing)
-    - [Instantiating DFAs](#instantiating-dfas)
-    - [Converting](#converting)
-    - [Minimal-DFA](#minimal-dfa)
-    - [Transition Table](#transition-table)
-    - [Check input strings](#check-input-strings)
-    - [Show Diagram](#show-diagram)
+    - [VisualDFA](#visualdfa)
+      - [Importing](#importing)
+      - [Instantiating DFAs](#instantiating-dfas)
+      - [Converting](#converting)
+      - [Minimal-DFA](#minimal-dfa)
+      - [Transition Table](#transition-table)
+      - [Check input strings](#check-input-strings)
+      - [Show Diagram](#show-diagram)
   - [Authors](#authors)
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
@@ -277,4 +277,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 - [Caleb Evans](https://github.com/caleb531) for his work on automata-lib.
 - [Geir Arne Hjelle](https://github.com/gahjelle), [Michal Porteš](https://github.com/mportesdev), and [Bart Willems](https://github.com/bart-r-willems) for their general counsel.
+- Dr. Seifedine Kadry; my Professor at NUC, for teaching me Automata.
 - [JFLAP](http://www.jflap.org) for their work on a GUI based Automata application.
