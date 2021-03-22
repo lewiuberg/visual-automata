@@ -277,5 +277,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 - [Caleb Evans](https://github.com/caleb531) for his work on automata-lib.
 - [Geir Arne Hjelle](https://github.com/gahjelle), [Michal Porteš](https://github.com/mportesdev), and [Bart Willems](https://github.com/bart-r-willems) for their general counsel.
-- Dr. Seifedine Kadry. My _Further Discrete Mathematics_ professor at **Noroff University College**, for teaching me Automata.
+- [Dr. Seifedine Kadry](https://www.noroff.no/en/contact/staff/53-academic/423-seifedine-kadry). My _Further Discrete Mathematics_ professor at **Noroff University College**, for teaching me Automata.
 - [JFLAP](http://www.jflap.org) for their work on a GUI based Automata application.
