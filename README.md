@@ -18,7 +18,7 @@ jupyter:
 
 [![Latest Version](https://img.shields.io/pypi/v/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
-[![Downloads](https://img.shields.io/pypi/dm/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
+[![Downloads](https://pepy.tech/badge/visual-automata)](https://pepy.tech/project/visual-automata)
 
 # Visual Automata
 
