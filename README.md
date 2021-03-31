@@ -21,11 +21,6 @@ jupyter:
 [![Latest Version](https://img.shields.io/pypi/v/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 [![Downloads](https://pepy.tech/badge/visual-automata)](https://pepy.tech/project/visual-automata)
-<<<<<<< HEAD
-
-# Visual Automata
-=======
->>>>>>> NFA
 
 Copyright 2021 [Lewi Lie Uberg](https://uberg.me/)\
 _Released under the MIT license_
@@ -70,11 +65,8 @@ Visual Automata is a Python 3 library built as a wrapper for the [Automata](http
 ## Installing
 
 [`pip install visual-automata`](https://pypi.org/project/visual-automata/)
-<<<<<<< HEAD
-=======
 
 ## Finite Automaton (FA)
->>>>>>> NFA
 
 ### VisualDFA
 
