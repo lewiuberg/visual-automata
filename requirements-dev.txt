@@ -4,3 +4,5 @@ colormath
 graphviz
 jupyterlab
 forbiddenfruit
+pytest
+pytest-cov
