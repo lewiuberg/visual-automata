@@ -3,4 +3,5 @@ pandas
 colormath
 graphviz
 jupyterlab
+forbiddenfruit
 
