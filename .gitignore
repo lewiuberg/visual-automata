@@ -5,6 +5,7 @@
 ref/
 build/
 dist/
+htmlcov/
 visual_automata.egg-info/
 local_requirements.txt
 .pytest_cache

@@ -18,4 +18,5 @@ exclude_lines =
 
 # Only check coverage for source files
 include =
+    #visual_automata/*
     visual_automata/*/*.py
