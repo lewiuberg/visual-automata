@@ -196,7 +196,7 @@ class VisualNFA:
                         cell.append("*" + next_state)
                     else:
                         cell.append(next_state)
-                if not cell and len(cell) == 1:
+                if len(cell) == 1 and not cell:
                     cell = np.nan
                 elif len(cell) == 1:
                     cell = cell.pop()
