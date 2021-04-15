@@ -1,5 +1,5 @@
 """
-Classes and methods for working with visual non-deterministic finite automata.
+Classes and methods for working with visual non-deterministic finite automata
 """
 
 import copy
