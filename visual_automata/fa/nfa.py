@@ -1,5 +1,5 @@
 """
-Classes and methods for working with visual non-deterministic finite automata
+Classes and methods for working with visual non-deterministic finite automata.
 """
 
 import copy
@@ -196,7 +196,7 @@ class VisualNFA:
                         cell.append("*" + next_state)
                     else:
                         cell.append(next_state)
-                if not cell:
+                if not cell and len(cell) == 1:
                     cell = np.nan
                 elif len(cell) == 1:
                     cell = cell.pop()
