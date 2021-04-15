@@ -6,7 +6,8 @@ ref/
 build/
 dist/
 visual_automata.egg-info/
-lewi_requirements.txt
+local_requirements.txt
+.pytest_cache
 
 ### macOS ###
 # General
