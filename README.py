@@ -7,7 +7,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.11.0
+#       jupytext_version: 1.11.1
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -19,6 +19,7 @@
 # [![Latest Version](https://img.shields.io/pypi/v/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 # [![Supported Python versions](https://img.shields.io/pypi/pyversions/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 # [![Downloads](https://pepy.tech/badge/visual-automata)](https://pepy.tech/project/visual-automata)
+# [![Coverage](https://img.shields.io/codecov/c/github/lewiuberg/visual-automata?color=blue)](https://app.codecov.io/gh/lewiuberg/visual-automata)
 #
 # Copyright 2021 [Lewi Lie Uberg](https://uberg.me/)\
 # _Released under the MIT license_
@@ -31,13 +32,13 @@
 #   - [Contents](#contents)
 #   - [Prerequisites](#prerequisites)
 #   - [Installing](#installing)
-#   - [Finite Automaton (FA)](#finite-automaton-fa)
+#   - [Finite Automaton](#finite-automaton-fa)
 #     - [VisualDFA](#visualdfa)
 #       - [Importing](#importing)
 #       - [Instantiating DFAs](#instantiating-dfas)
 #       - [Converting](#converting)
-#       - [Minimal-DFA](#minimal-dfa)
 #       - [Transition Table](#transition-table)
+#       - [Minimal-DFA](#minimal-dfa)
 #       - [Check input strings](#check-input-strings)
 #       - [Show Diagram](#show-diagram)
 #     - [VisualNFA](#visualnfa)
@@ -64,8 +65,6 @@
 #
 # [`pip install visual-automata`](https://pypi.org/project/visual-automata/)
 #
-#
-
 # ## Finite Automaton (FA)
 #
 # ### VisualDFA
@@ -136,7 +135,7 @@ dfa.table
 # q3   *q4   q1
 # *q4  *q4   q1
 # ```
-
+#
 # #### Minimal-DFA
 #
 # Creates a minimal DFA which accepts the same inputs as the old one. Unreachable states are removed and equivalent states are merged. States are renamed by default.
@@ -178,7 +177,7 @@ minimal_dfa.table
 # →{q0,q2}  {q0,q2}      *q1
 # *q1       {q0,q2}  {q0,q2}
 # ```
-
+#
 # #### Check input strings
 #
 # `1001` does not end with `00` or `11`, and is therefore `Rejected`
@@ -247,7 +246,7 @@ dfa.show_diagram("10011")
 # ```
 #
 # ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/dfa_10011.png?raw=true "dfa_10011")
-
+#
 # ### VisualNFA
 #
 # #### Importing
@@ -310,7 +309,7 @@ nfa.table
 # q1    {*q0,q2}  q2   ∅
 # q2           ∅   ∅   ∅
 # ```
-
+#
 # #### Eliminate lambda/epsilon
 #
 # Creates a NFA with lambda transitions removed.
@@ -329,7 +328,7 @@ nfa_eliminated.table
 nfa_eliminated.show_diagram()
 
 # ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/eliminated_nfa.png?raw=true "eliminated_nfa")
-
+#
 # #### Check input strings
 #
 # `101` does not correspond with the pattern `10`, `1010`, `101010`, and is therefore `Rejected`
@@ -343,6 +342,7 @@ nfa.input_check("101")
 # 2                 q1             0         q2
 # 3                 q2             1          ∅
 # ```
+#
 # `1010` does correspond with the pattern `10`, `1010`, `101010`, and is therefore `Accepted`
 
 nfa.input_check("1010")
@@ -393,7 +393,7 @@ nfa.show_diagram("1010")
 # ```
 #
 # ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/nfa_1010.png?raw=true "nfa_1010")
-
+#
 # Please note that for long input strings, the path calculations may take some time.
 
 big_nfa = VisualNFA(
@@ -426,7 +426,7 @@ big_nfa.show_diagram("CGC")
 # ```
 #
 # ![alt text](https://github.com/lewiuberg/visual-automata/blob/master/images/big_nfa.png?raw=true "big_nfa")
-
+#
 # ## Authors
 #
 # - **[Lewi Lie Uberg](https://github.com/lewiuberg)** - [uberg.me](https://uberg.me/)

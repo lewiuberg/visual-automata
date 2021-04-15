@@ -8,19 +8,19 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.11.0
+      jupytext_version: 1.11.1
   kernelspec:
     display_name: Python 3
     language: python
     name: python3
 ---
 -->
-
 # Visual Automata
 
 [![Latest Version](https://img.shields.io/pypi/v/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 [![Downloads](https://pepy.tech/badge/visual-automata)](https://pepy.tech/project/visual-automata)
+[![Coverage](https://img.shields.io/codecov/c/github/lewiuberg/visual-automata?color=blue)](https://app.codecov.io/gh/lewiuberg/visual-automata)
 
 Copyright 2021 [Lewi Lie Uberg](https://uberg.me/)\
 _Released under the MIT license_
