@@ -27,7 +27,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements-dev.txt
     - name: Run pytest
-      run: pytest --cov
+      run: pytest -v --cov .
 
     - name: Coverage report
       run: bash <(curl -s https://codecov.io/bash)
