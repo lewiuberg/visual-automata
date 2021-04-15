@@ -1,4 +1,6 @@
-"""Classes and methods for working with visual deterministic finite automata."""
+"""
+Classes and methods for working with visual non-deterministic finite automata.
+"""
 
 import copy
 import random
@@ -304,7 +306,7 @@ class VisualNFA:
         status: bool = False,
         counter: int = 0,
         main_counter: int = 0,
-    ) -> Union[bool, list]:
+    ) -> Union[bool, list]:  # pragma: no cover. Too many possibilities.
         """
         Searches for a appropriate path to return to input_check.
 
@@ -342,7 +344,7 @@ class VisualNFA:
     @staticmethod
     def __pathsearcher(
         nfa, input_str: str, status: bool = False, counter: int = 0
-    ) -> list:
+    ) -> list:  # pragma: no cover. Too many possibilities.
         """
         Searches for a appropriate path to return to _pathfinder.
 
@@ -375,8 +377,11 @@ class VisualNFA:
             current_state = {(state)}
 
         # Accepted path opptained.
-        if (status and len(input_str) == (len(path)) and path[-1][1]
-                in nfa.final_states):
+        if (
+            status
+            and len(input_str) == (len(path))
+            and path[-1][1] in nfa.final_states
+        ):
             return path
         # Rejected path opptained.
         elif not status and len(input_str) == (len(path)):
@@ -395,7 +400,7 @@ class VisualNFA:
         input_str: str,
         transitions_taken: list,
         status: bool,
-    ) -> DataFrame:
+    ) -> DataFrame:  # pragma: no cover. Too many possibilities.
         """
         Generates a table of taken transitions based on the input string and it's result.
 
@@ -451,7 +456,9 @@ class VisualNFA:
             return transition_steps, inputs
 
     @staticmethod
-    def _transitions_pairs(all_transitions: dict) -> list:
+    def _transitions_pairs(
+        all_transitions: dict,
+    ) -> list:  # pragma: no cover. Too many possibilities.
         """
         Generates a list of all possible transitions pairs for all input symbols.
 
@@ -480,7 +487,9 @@ class VisualNFA:
 
     def input_check(
         self, input_str: str, return_result=False
-    ) -> Union[bool, list, DataFrame]:
+    ) -> Union[
+        bool, list, DataFrame
+    ]:  # pragma: no cover. Too many possibilities.
         """
         Checks if string of input symbols results in final state.
 
@@ -545,7 +554,7 @@ class VisualNFA:
         font_size: float = 14.0,
         arrow_size: float = 0.85,
         state_seperation: float = 0.5,
-    ) -> Digraph:
+    ) -> Digraph:  # pragma: no cover. Too many possibilities.
         """
         Generates the graph associated with the given NFA.
 
@@ -594,8 +603,8 @@ class VisualNFA:
         # Defining all states.
         for state in sorted(self.nfa.states):
             if (
-                state in self.nfa.initial_state and state
-                in self.nfa.final_states
+                state in self.nfa.initial_state
+                and state in self.nfa.final_states
             ):
                 graph.node(state, shape="doublecircle", fontsize=font_size)
             elif state in self.nfa.initial_state:
