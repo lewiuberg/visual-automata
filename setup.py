@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="visual-automata",
-    version="1.1.0",
+    version="1.1.1",
     description="Visual Automata is a Python 3 library built as a wrapper for the Automata library to add more visualization features.",
     long_description=README,
     long_description_content_type="text/markdown",
