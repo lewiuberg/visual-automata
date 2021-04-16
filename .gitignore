@@ -9,6 +9,7 @@ htmlcov/
 visual_automata.egg-info/
 requirements-local.txt
 .pytest_cache
+.coverage
 
 ### macOS ###
 # General

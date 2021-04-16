@@ -1,8 +1,0 @@
-automata-lib
-pandas
-colormath
-graphviz
-jupyterlab
-forbiddenfruit
-pytest
-pytest-cov
