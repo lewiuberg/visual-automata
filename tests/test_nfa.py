@@ -2,6 +2,9 @@
 
 import types
 
+import pandas as pd
+from pandas.testing import assert_frame_equal
+
 import tests.test_fa as test_fa
 from visual_automata.fa.nfa import VisualNFA
 
@@ -80,7 +83,7 @@ class TestNFA(test_fa.TestFA):
     def test_get_lambda_closure(self):
         """Should return True if the correct closeure are produced."""
         reference_closure = {"q1", "q2"}
-        closure = self.nfa._get_lambda_closure("q1")
+        closure = self.nfgita._get_lambda_closure("q1")
         assert closure == reference_closure
 
     def test_get_next_current_state(self):
@@ -94,31 +97,14 @@ class TestNFA(test_fa.TestFA):
 
     def test_table(self):
         """Should return True if the NFA table is generated correctly."""
-        nfa = VisualNFA(
-            states={"q0", "q1", "q2"},
-            input_symbols={"0", "1"},
-            transitions={
-                "q0": {"": {"q2"}, "1": {"q1"}},
-                "q1": {"1": {"q2"}, "0": {"q0", "q2"}},
-                "q2": {},
-            },
-            initial_state="q0",
-            final_states={"q0"},
-        )
-        reference_tables = [
+        reference_dataframes = pd.DataFrame(
             {
                 "a": {"→q0": "*q1", "*q1": "*q1", "q2": "∅"},
                 "b": {"→q0": "∅", "*q1": "∅", "q2": "q0"},
                 "λ": {"→q0": "∅", "*q1": "q2", "q2": "∅"},
-            },
-            {
-                "0": {"→*q0": "∅", "q1": "{*q0,q2}", "q2": "∅"},
-                "1": {"→*q0": "q1", "q1": "q2", "q2": "∅"},
-                "λ": {"→*q0": "q2", "q1": "∅", "q2": "∅"},
-            },
-        ]
-        nfa_tables = [self.nfa.table.to_dict(), nfa.table.to_dict()]
-        assert nfa_tables == reference_tables
+            }
+        )
+        assert_frame_equal(reference_dataframes, self.nfa.table)
 
     def test_lambda_transition_exists(self):
         """Should return True if the NFA table is generated correctly."""
