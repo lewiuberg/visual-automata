@@ -7,7 +7,7 @@ build/
 dist/
 htmlcov/
 visual_automata.egg-info/
-local_requirements.txt
+requirements-local.txt
 .pytest_cache
 
 ### macOS ###
