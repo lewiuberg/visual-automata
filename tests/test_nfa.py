@@ -83,7 +83,7 @@ class TestNFA(test_fa.TestFA):
     def test_get_lambda_closure(self):
         """Should return True if the correct closeure are produced."""
         reference_closure = {"q1", "q2"}
-        closure = self.nfgita._get_lambda_closure("q1")
+        closure = self.nfa._get_lambda_closure("q1")
         assert closure == reference_closure
 
     def test_get_next_current_state(self):
