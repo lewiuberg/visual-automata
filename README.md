@@ -1,4 +1,4 @@
----
+<!-- ---
 jupyter:
   jupytext:
     encoding: '# -*- coding: utf-8 -*-'
@@ -12,7 +12,7 @@ jupyter:
     display_name: Python 3 (ipykernel)
     language: python
     name: python3
----
+--- -->
 
 <!-- #region tags=[] -->
 # Visual Automata <!-- omit in toc -->
