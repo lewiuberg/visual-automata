@@ -7,13 +7,14 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.11.1
+#       jupytext_version: 1.11.4
 #   kernelspec:
-#     display_name: Python 3
+#     display_name: Python 3 (ipykernel)
 #     language: python
 #     name: python3
 # ---
 
+# + [markdown] tags=[]
 # # Visual Automata
 #
 # [![Latest Version](https://img.shields.io/pypi/v/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
@@ -53,10 +54,27 @@
 #   - [License](#license)
 #   - [Acknowledgments](#acknowledgments)
 #
-# ## Prerequisites
+# ## Citation
 #
-# [`pip install automata-lib`](https://github.com/caleb531/automata)\
-# [`pip install pandas`](https://github.com/pandas-dev/pandas)\
+# ### APA
+#
+# ```apa
+# Lie Uberg, L. (2021). Visual Automata (Version 1.1.1) [Computer software]. https://github.com/lewiuberg/visual-automata
+# ```
+#
+# ### BibTex
+#
+# ```BibTex
+# @misc{Lie_Uberg_Visual_Automata_2021,
+# author = {Lie Uberg, Lewi},
+# month = {4},
+# title = {{Visual Automata}},
+# url = {https://github.com/lewiuberg/visual-automata},
+# year = {2021}
+# }
+# ```
+#
+# hub.com/pandas-dev/pandas)\
 # [`pip install graphviz`](https://github.com/xflr6/graphviz)\
 # [`pip install colormath`](https://github.com/gtaylor/python-colormath)\
 # [`pip install jupyterlab`](https://github.com/jupyterlab/jupyterlab)

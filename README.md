@@ -1,4 +1,3 @@
-<!--
 ---
 jupyter:
   jupytext:
@@ -8,14 +7,15 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.11.1
+      jupytext_version: 1.11.4
   kernelspec:
-    display_name: Python 3
+    display_name: Python 3 (ipykernel)
     language: python
     name: python3
 ---
--->
-# Visual Automata
+
+<!-- #region tags=[] -->
+# Visual Automata <!-- omit in toc -->
 
 [![Latest Version](https://img.shields.io/pypi/v/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
@@ -27,32 +27,55 @@ _Released under the MIT license_
 
 Visual Automata is a Python 3 library built as a wrapper for the [Automata](https://github.com/caleb531/automata) library to add more visualization features.
 
-## Contents
+## Contents <!-- omit in toc -->
 
-- [Visual Automata](#visual-automata)
-  - [Contents](#contents)
-  - [Prerequisites](#prerequisites)
-  - [Installing](#installing)
-  - [Finite Automaton (FA)](#finite-automaton-fa)
-    - [VisualDFA](#visualdfa)
-      - [Importing](#importing)
-      - [Instantiating DFAs](#instantiating-dfas)
-      - [Converting](#converting)
-      - [Transition Table](#transition-table)
-      - [Minimal-DFA](#minimal-dfa)
-      - [Check input strings](#check-input-strings)
-      - [Show Diagram](#show-diagram)
-    - [VisualNFA](#visualnfa)
-      - [Importing](#importing-1)
-      - [Instantiating NFAs](#instantiating-nfas)
-      - [Converting](#converting-1)
-      - [Transition Table](#transition-table-1)
-      - [Eliminate lambda/epsilon](#eliminate-lambdaepsilon)
-      - [Check input strings](#check-input-strings-1)
-      - [Show Diagram](#show-diagram-1)
-  - [Authors](#authors)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
+- [Citation](#citation)
+  - [APA](#apa)
+  - [BibTex](#bibtex)
+- [Prerequisites](#prerequisites)
+- [Installing](#installing)
+- [Finite Automaton (FA)](#finite-automaton-fa)
+  - [VisualDFA](#visualdfa)
+    - [Importing](#importing)
+    - [Instantiating DFAs](#instantiating-dfas)
+    - [Converting](#converting)
+    - [Transition Table](#transition-table)
+    - [Minimal-DFA](#minimal-dfa)
+    - [Check input strings](#check-input-strings)
+    - [Show Diagram](#show-diagram)
+  - [VisualNFA](#visualnfa)
+    - [Importing](#importing-1)
+    - [Instantiating NFAs](#instantiating-nfas)
+    - [Converting](#converting-1)
+    - [Transition Table](#transition-table-1)
+    - [Eliminate lambda/epsilon](#eliminate-lambdaepsilon)
+    - [Check input strings](#check-input-strings-1)
+    - [Show Diagram](#show-diagram-1)
+- [Authors](#authors)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Citation
+
+Please see [CITATION.cff](CITATION.cff) for the full citation information.
+
+### APA
+
+```apa
+Lie Uberg, L. (2021). Visual Automata (Version 1.1.1) [Computer software]. https://github.com/lewiuberg/visual-automata
+```
+
+### BibTex
+
+```BibTex
+@misc{Lie_Uberg_Visual_Automata_2021,
+author = {Lie Uberg, Lewi},
+month = {4},
+title = {{Visual Automata}},
+url = {https://github.com/lewiuberg/visual-automata},
+year = {2021}
+}
+```
 
 ## Prerequisites
 
@@ -73,6 +96,7 @@ Visual Automata is a Python 3 library built as a wrapper for the [Automata](http
 #### Importing
 
 Import needed classes.
+<!-- #endregion -->
 
 ```python
 from automata.fa.dfa import DFA
