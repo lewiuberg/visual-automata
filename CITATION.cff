@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 title: "Visual Automata"
 abstract: "Visual Automata is a Python 3 library built as a wrapper for the Automata library to add more visualization features."
 authors:
-  - family-names: "L. Uberg"
+  - family-names: "Lie Uberg"
     given-names: Lewi
 version: 1.1.1
 date-released: 2021-04-16
