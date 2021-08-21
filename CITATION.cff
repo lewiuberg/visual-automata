@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: Visual Automata
+abstract: "Visual Automata is a Python 3 library built as a wrapper for the Automata library to add more visualization features."
+authors:
+  - family-names: Uberg
+    given-names: Lewi L.
+version: 1.1.1
+date-released: 2021-04-16
+keywords:
+    - Automata
+    - Visualization
+    - Visual Automata
+    - Automata Library
+    - Python
+    - Python 3
+    - Finite State Machine
+    - Deterministic Finite State Machine
+    - Non-Deterministic Finite State Machine
