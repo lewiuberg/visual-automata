@@ -68,11 +68,13 @@ Lie Uberg, L. (2021). Visual Automata (Version 1.1.1) [Computer software]. https
 ### BibTex
 
 ```BibTex
-@misc{Lie_Uberg_Visual_Automata_2021,
+@software{Lie_Uberg_Visual_Automata_2021,
 author = {Lie Uberg, Lewi},
+license = {MIT},
 month = {4},
 title = {{Visual Automata}},
 url = {https://github.com/lewiuberg/visual-automata},
+version = {1.1.1},
 year = {2021}
 }
 ```
