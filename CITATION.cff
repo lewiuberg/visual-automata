@@ -5,6 +5,7 @@ abstract: "Visual Automata is a Python 3 library built as a wrapper for the Auto
 authors:
   - family-names: "Lie Uberg"
     given-names: Lewi
+    orcid: "https://orcid.org/0000-0001-8839-0960"
 version: 1.1.1
 date-released: 2021-04-16
 repository-code: "https://github.com/lewiuberg/visual-automata"
