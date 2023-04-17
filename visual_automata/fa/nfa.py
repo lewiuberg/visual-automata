@@ -470,8 +470,9 @@ class VisualNFA:
         transition_possibilities: list = []
         for state, state_transitions in all_transitions.items():
             for symbol, transitions in state_transitions.items():
+                transitions = list(transitions)
                 if len(transitions) < 2:
-                    if transitions != "" and transitions != {}:
+                    if transitions != "" and transitions != []:
                         transitions = transitions.pop()
                     transition_possibilities.append(
                         (state, transitions, symbol)
