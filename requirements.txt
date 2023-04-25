@@ -1,4 +1,4 @@
-automata-lib
+automata-lib=6.0.2
 pandas
 colormath
 graphviz
