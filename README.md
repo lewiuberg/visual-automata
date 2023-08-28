@@ -15,6 +15,9 @@ jupyter:
 --- -->
 
 <!-- #region tags=[] -->
+⛔️ DEPRECATED - Almost all the functionality of Visual Automata have been integrated directly into the [Automata](https://github.com/caleb531/automata) library. Further development will be conducted there.
+---
+
 # Visual Automata <!-- omit in toc -->
 
 [![Latest Version](https://img.shields.io/pypi/v/visual-automata.svg)](https://pypi.python.org/pypi/visual-automata/)
@@ -22,7 +25,7 @@ jupyter:
 [![Downloads](https://pepy.tech/badge/visual-automata)](https://pepy.tech/project/visual-automata)
 [![Coverage](https://img.shields.io/codecov/c/github/lewiuberg/visual-automata?color=blue)](https://app.codecov.io/gh/lewiuberg/visual-automata)
 
-Copyright 2021 [Lewi Lie Uberg](https://uberg.me/)\
+Copyright 2023 [Lewi Lie Uberg](https://uberg.me/)\
 _Released under the MIT license_
 
 Visual Automata is a Python 3 library built as a wrapper for the [Automata](https://github.com/caleb531/automata) library to add more visualization features.
